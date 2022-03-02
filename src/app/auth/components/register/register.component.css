@@ -1,0 +1,73 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
+.signup-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup-wrapper .signup-card {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    padding: 1.5rem;
+}
+
+.signup-wrapper .signup-card .card-title {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.signup-wrapper .signup-card .card-content {
+    margin: 0;
+    padding: 0;
+}
+
+.signup-wrapper .signup-card .form-field {
+    margin: 0;
+    padding: 0;
+    margin-bottom: .5rem;
+}
+
+.signup-wrapper .signup-card .input-full-width {
+    width: 100%;
+}
+
+.signup-wrapper .signup-card .card-actions {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.signup-wrapper .signup-card .card-actions a {
+    padding: 0 .5rem;
+}
+
+.signup-wrapper .signup-card .card-footer {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.signup-wrapper .signup-card .card-footer a {
+    width: 100%;
+}
+
+.signup-wrapper .signup-card .mat-btn {
+    margin: 0;
+    padding: 0;
+}
+
+.signup-wrapper .signup-card .register-btn {
+    width: 100px;
+}
