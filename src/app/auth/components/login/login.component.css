@@ -4,18 +4,6 @@
     box-sizing: border-box;
 }
 
-.wrapper {
-    display: flex;
-}
-
-.wrapper .side-bg {
-    height: 100vh;
-    width: 65vw;
-    background: url('../../../../assets/bg.png');
-    background-repeat: no-repeat;
-    object-fit: contain;
-}
-
 .login-wrapper {
     display: flex;
     justify-content: center;
@@ -28,6 +16,10 @@
     margin: 0;
     padding: 0;
     width: 300px;
+    overflow: hidden;
+}
+
+.login-wrapper .login-card form {
     padding: 1.5rem;
 }
 
@@ -35,7 +27,9 @@
     margin: 0;
     padding: 0;
     text-align: center;
-    margin-bottom: 1.5rem;
+    background: #009da7;
+    color: white;
+    padding: 1rem 0;
 }
 
 .login-wrapper .login-card .card-content {

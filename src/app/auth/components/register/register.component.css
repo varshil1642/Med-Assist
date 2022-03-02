@@ -15,6 +15,9 @@
     margin: 0;
     padding: 0;
     width: 300px;
+}
+
+.signup-wrapper .signup-card form {
     padding: 1.5rem;
 }
 
@@ -22,7 +25,9 @@
     margin: 0;
     padding: 0;
     text-align: center;
-    margin-bottom: 1.5rem;
+    background: #009da7;
+    color: white;
+    padding: 1rem 0;
 }
 
 .signup-wrapper .signup-card .card-content {
