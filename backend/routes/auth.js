@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const bcrypt = require('bcryptjs');
 const User = require('../models/User');
+const mailconfig = require('../mailconfig');
+
 const { registerValidation, loginValidation } = require('../validation/user_val');
 
 router.post('/register', async (req, res) => {
@@ -20,6 +22,17 @@ router.post('/register', async (req, res) => {
         res.status(400).send('Email already exists.');
         return;
     }
+
+    //Send OTP
+    mailconfig.mailOptions.to=req.body.email;
+    mailconfig.transporter.sendMail(mailconfig.mailOptions,function(err,info){
+      if(err){
+        console.log(err);
+      }
+      else{
+          console.log("Email Has been send ",info.response);
+      }
+    });
 
     // Hash the password
     const hashedPassword = await bcrypt.hash(req.body.password, 10);
@@ -56,7 +69,7 @@ router.post('/login', async (req, res) => {
         res.status(400).send('Invalid username.');
         return;
     }
-    
+
     // const user = await User.findOne({ email: req.body.email });
     // if (!user)
     // {

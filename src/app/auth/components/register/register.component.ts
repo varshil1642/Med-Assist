@@ -13,9 +13,12 @@ export class RegisterComponent implements OnInit {
     usertype: '',
     username: '',
     email: '',
-    password: ''
+    password: '',
+    otp: ''
   }
-
+  
+  isHiddenotp: boolean = true;
+  isClickedotp: boolean = false;
   registerUser = () => {
     this.auth.registerUser(this.registerUserData).subscribe(
       res => console.log(res),
